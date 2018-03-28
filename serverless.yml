@@ -22,6 +22,11 @@ custom:
 provider:
   name: aws
   runtime: nodejs4.3
+  environment:
+    Twilio_SSID: 'your_id'
+    Twilio_Token: 'your_token'
+    Twilio_phoneNumber: 'your_number'
+    Calling_Number: 'your_number'
   iamRoleStatements:
     - Effect: "Allow"
       Action:
